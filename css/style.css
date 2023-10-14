@@ -1,0 +1,665 @@
+/* Importe de fontes */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Declaração de fontes e paleta de cores */
+:root {
+    --fontTitulos: 'REM', sans-serif;
+    --fontParagrafos:'Oswald', sans-serif;
+    --corRosa:#f26dab;
+    --corRoxo:#6d3a7a;
+    --corAmarelo:#d9bf73;
+    --corAzul:#4371e6;
+    --corAzulescuro:#0d1a26;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+#container-principal {
+    background-image: url(../imagens/jason.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+   
+}
+/* Cabeçalho e menu de navegação */
+#box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+
+/* menu de navegação */
+#container-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 480px;
+}
+
+#container-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: var(--fontTitulos);
+    padding: 10px;
+    border-radius: 20px;
+    transition: 1.2s ease-out; 
+}
+
+#container-nav a:hover {
+    background-color: var(--corAzul);
+    transition: .8s ease-in;
+}
+
+/* container do logo */
+#box-header #box-logo {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    left: 20px;
+    cursor: pointer;
+}
+
+/* menu de icones */
+#box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 10px;
+    width: 150px;
+}
+#box-icon img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Conteúdo main - principal */
+#box-friday {
+    margin-top: 5vh;
+    margin-left: 20px;
+    width: 730px;
+    height: 450px;
+    padding: 15px;
+}
+
+/* logo */
+#box-friday #logo-friday {
+    width: 600px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+/* descrição do filme */
+#box-friday #box-description {
+    color: white;
+    font-size: 22px;
+    font-family: var(--fontParagrafos);
+}
+
+#box-friday #box-descriptionmovie {
+    margin: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: white;
+}
+
+/* buttões do filme */
+#box-trailer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#box-trailer img {
+    width: 50px;
+    height: 50px;
+}
+
+#box-trailer a {
+    position: relative;
+    left: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--fontParagrafos);
+    color: white;
+}
+
+#box-trailer a:hover {
+    color: gray;
+    transition: .8s;
+}
+
+#box-trailer .box-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    width: 230px;
+    background-color: var(--corAzulescuro);
+    border-radius: 20px;
+}
+
+#box-trailer #box-buttontrailer {
+    width: 150px;
+}
+
+/* Sessão filmes populares */
+#box-populars {
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+    padding: 8px;
+}
+
+#box-populars h1 {
+    position: relative;
+    left: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--fontTitulos);
+}
+
+#box-populars #box-popularsmovie {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box-populars img {
+    width: 230px;
+    height: 270px;
+    border-radius: 8px;
+    transition: 1.2s;
+}
+
+#box-populars img:hover {
+    transform: translateY(-5%);
+    border: 2px solid white;
+    transition: 1.2s;
+}
+
+/* Sessão series */
+.box-series {
+    margin-top: -10px;
+    width: 100%;
+    height: 360px;
+    background-color: var(--corAzulescuro);
+    padding: 8px;
+}
+
+.box-series h1 {
+    position: relative;
+    left: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--fontTitulos);
+}
+
+.box-series .box-popularseries {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-series img {
+    width: 230px;
+    height: 270px;
+    border-radius: 8px;
+    transition: 1.2s;
+}
+
+.box-series img:hover {
+    transform: translateY(-5%);
+    border: 2px solid white;
+    transition: 1.2s;
+}
+
+/* Sessão animes */
+#box-animes {
+    margin-top: -10px;
+    width: 100%;
+    height: 360px;
+    background-color: black;
+    padding: 10px;
+}
+
+#box-animes h1 {
+    position: relative;
+    left: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: var(--fontTitulos);
+}
+
+#box-animes #box-popularanime {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box-animes img {
+    width: 230px;
+    height: 270px;
+    border-radius: 8px;
+    transition: 1.2s;
+    
+}
+
+#box-animes img:hover {
+    transform: translateY(-5%);
+    border: 2px solid white;
+    transition: 1.2s;
+}
+
+/* Rodapé do site */
+#box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: var(--corAzul);
+}
+
+#box-footer p {
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+/* Configuração de responsividade */
+/* Telas de 1680px */
+@media screen and (max-width: 1680px) {
+/* Conteúdo main - principal */
+#box-friday {
+    margin-top: 8vh;
+    width: 700px;
+    height: 300px;
+}
+
+/* logo do conteúdo principal*/
+#box-friday #logo-friday {
+    width: 500px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Sessão de filmes populares */
+#box-populars {
+    margin-top: 120px;
+}
+
+#box-populars img {
+    width: 200px;
+    height: 270px;
+
+}
+
+/* Sessão de séries */
+.box-series {
+    height: 380px;
+}
+
+
+#box-series01 {
+    height: 380px;
+    margin-top: -10px;
+}
+
+.box-series img {
+    width: 200px;
+    height: 270px;
+
+}
+
+/* Sessão animes */
+#box-animes {
+    height: 380px;
+}
+
+
+#box-animes img {
+    width: 200px;
+    height: 270px;
+}
+}
+
+/* Telas de 1440px */
+@media screen and (max-width:1440px) {
+/* Cabeçalho e menu de navegação */
+#container-nav a {
+    font-size: 16px;
+}
+
+/* Conteúdo main - principal */
+#box-friday {
+    margin-top: 0vh;
+    width: 600px;
+    height: 300px;
+}
+
+/* logo do conteúdo principal*/
+    #box-friday #logo-friday {
+    width: 480px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+/* buttões do filme */
+#box-trailer img {
+    width: 30px;
+    height: 30px;
+}
+
+#box-trailer a {
+    font-size: 16px;
+}
+
+#box-trailer .box-button {
+    padding: 5px 7px 5px 0px;
+    width: 180px;
+}
+
+#box-trailer #box-buttontrailer {
+    width: 120px;
+}
+
+/* Sessão de filmes populares */
+#box-populars {
+    margin-top: 120px;
+}
+
+#box-populars img {
+    width: 170px;
+    height: 200px;
+}
+
+/* Sessão de séries */
+.box-series {
+    height: 270px;
+}
+
+#box-series01 {
+    height: 270px;
+    margin-top: -10px;
+}
+
+.box-series img {
+    width: 170px;
+    height: 200px;
+}
+
+/* Sessão animes */
+#box-animes {
+    height: 270px;
+}
+
+#box-animes img {
+    width: 170px;
+    height: 200px;
+}
+}
+
+/* Telas 1024px */
+@media screen and (max-width:1024px) {
+/* container do logo */
+#box-header #box-logo {
+    width: 80px;
+    height: 50px;
+}
+
+/* Cabeçalho e menu de navegação */
+#container-nav a {
+    font-size: 14px;
+}
+
+/* logo do conteúdo principal*/
+#box-friday #logo-friday {
+    width: 400px;
+    height: 100px;
+}
+
+/* Conteúdo main - principal */
+#box-friday {
+    margin-top: 5vh;
+    margin-left: 5px;
+    width: 700px;
+    height: 320px;
+    padding: 15px;
+}
+
+/* descrição do filme */
+#box-friday #box-description {
+    font-size: 20px;
+}
+
+/* buttões do filme */
+#box-trailer img {
+    width: 30px;
+    height: 30px;
+}
+
+#box-trailer a {
+    font-size: 16px;
+}
+
+#box-trailer .box-button {
+    padding: 5px 10px 5px 0px;
+}
+
+/* Sessão de filmes populares */
+#box-populars {
+    margin-top: 70px;
+    height: 620px;
+    background-color: var(--corAzulescuro);
+}
+
+ #box-popularsmovie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+} 
+
+#box-populars h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#box-populars img {
+    width: 200px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+/* Sessão de séries */
+.box-series {
+    height: 620px;
+    background-color: black;
+}
+
+#box-series01 {
+    height: 620px;
+    margin-top: 320px;
+}
+
+.box-popularseries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.box-series h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.box-popularseries img {
+    width: 200px;
+    height: 240px;
+    margin-top: 10px;
+}
+
+/* Sessão animes */
+#box-animes {
+    height: 620px;
+}
+
+#box-popularanime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+#box-animes img {
+    width: 200px;
+    height: 240px;
+    margin-top: 10px;
+}
+}
+
+/* Telas 768px */
+@media screen and (max-width:768px) {
+/* Sessão de filmes populares */
+#box-populars img {
+    width: 177px;
+}
+
+/* Sessão de séries */
+.box-popularseries img {
+    width: 177px;
+}
+
+/* Sessão animes */
+#box-animes img {
+    width: 177px;
+}
+}
+
+/* Telas  */
+@media screen and (max-width:600px) {
+    /* container do logo */
+#box-header #box-logo {
+    display: none;
+}
+
+/* Cabeçalho e menu de navegação */
+#box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+
+/* menu de navegação */
+#container-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 380px;
+}
+
+/* logo do conteúdo principal*/
+#box-friday #logo-friday {
+    width: 380px;
+    height: 100px;
+}
+
+/* Conteúdo main - principal */
+#box-friday {
+    margin-top: 7vh;
+    width: 570px;
+    height: 350px;
+}
+
+/* buttões do filme */
+#box-trailer a {
+    font-size: 16px;
+}
+
+/* Sessão de filmes populares */
+#box-populars {
+    margin-top: 50px;
+    height: 550px;
+}
+
+#box-populars h1 {
+    font-size: 30px;
+}
+
+#box-populars img {
+    width: 137px;
+    height: 210px;
+}
+
+/* Sessão de séries */
+.box-series {
+    height: 550px;
+}
+
+#box-series01 {
+    height: 550px;
+    margin-top: 295px;
+}
+
+.box-series h1 {
+    font-size: 30px;
+}
+
+.box-popularseries img {
+    width: 137px;
+    height: 210px;
+}
+
+/* Sessão animes */
+#box-animes {
+    height: 550px;
+}
+
+#box-animes h1 {
+    font-size: 30px;
+}
+
+#box-animes img {
+    width: 137px;
+    height: 210px;
+}
+}
+
+
